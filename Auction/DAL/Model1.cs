@@ -31,6 +31,7 @@ namespace DAL
         public string NickName { get; set; }
         [Required]
         public string Password { get; set; }
+        
         [Required]
         public int Age { get; set; }
         [Required]
