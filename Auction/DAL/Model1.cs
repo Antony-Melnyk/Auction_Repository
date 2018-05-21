@@ -50,7 +50,7 @@ namespace DAL
         [Required]
         public string Info { get; set; }
         [Required]
-        public User user { get; set; }
+        public User User { get; set; }
     }
 
     public class Auction
@@ -59,7 +59,7 @@ namespace DAL
         [Required]
         public string Name { get; set; }
         [Required]
-        public Item item { get; set; }
+        public Item Item { get; set; }
         [Required]
         public DateTime DateOfStart { get; set; }
         public DateTime DateOfBuy { get; set; }
