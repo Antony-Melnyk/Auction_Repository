@@ -52,7 +52,7 @@ namespace BLL
             item.Price = price;
             item.Name = name;
             item.Info = info;
-            item.user = user;
+            item.User = user;
             using (Model1 m1 = new Model1())
             {
                 m1.Items.Add(item);
@@ -65,7 +65,7 @@ namespace BLL
             Auction a = new Auction();
             a.Name = name;
             a.DateOfStart = DateTime.Now;
-            a.item = item;
+            a.Item = item;
 
             using (Model1 m1 = new Model1())
             {
