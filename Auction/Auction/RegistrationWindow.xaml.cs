@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BLL;
 
 namespace Auction
 {
@@ -28,7 +29,9 @@ namespace Auction
 
         private void Registration_Click(object sender, RoutedEventArgs e)
         {
-
+            if (Operations.Registration(Name_Box.Text, Password_Box.Password, Email_Box.Text, Convert.ToInt32(Age_Box.Text)) == true)
+                MessageBox.Show("Registration was succesful", "Message", MessageBoxButton.OK, MessageBoxImage.Information);
+            else MessageBox.Show("Name [" + Name_Box.Text + "] is busy!", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
