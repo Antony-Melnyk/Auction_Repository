@@ -34,8 +34,8 @@
         <Label Content="Name of the Item, price " Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="14" Foreground="Blue" Height="29" Margin="7,0" Width="345"/>
         <Label Content="00:00:00" Grid.Column="1" Foreground="Blue" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="92" Width="84" Grid.RowSpan="3" Margin="137,32,138,0"/>
         <Label Content="UserName" Grid.Column="0" Grid.Row="1" Foreground="Blue" FontSize="14" HorizontalAlignment="Center" Width="76" Margin="52,0,51,0"/>
-        <TextBlock Text="Balance: " Grid.Column="3" Grid.Row="1" Foreground="Blue" FontSize="14" Margin="0,0,126,0"/>
-        <TextBlock Text="0000" Grid.Column="3" Grid.Row="1" Foreground="Blue" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="68,0,76,0" Width="36" Height="19"/>
+        <TextBlock Text="Balance: 00000 " Grid.Column="3" Grid.Row="1" Foreground="Blue" FontSize="14"/>
+        <!--<TextBlock Text="0000" Grid.Column="3" Grid.Row="1" Foreground="Blue" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="68,0,76,0" Width="36" Height="19"/>-->
         <Button Content="Add Money" Grid.Column="3" Foreground="Blue" Background="LightBlue" FontSize="14" Margin="2"/>
         <!--<ScrollBar Grid.Column="2" Grid.Row="5" HorizontalAlignment="Right" Margin="0,0,7,0" Width="17"/>-->
         <ScrollViewer Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2">
