@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +19,16 @@ namespace Auction
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class RegistrationWindow : Window
+    public partial class RegistrationWindow : MetroWindow
     {
         public RegistrationWindow()
         {
             InitializeComponent();
+        }
+
+        private void Registration_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

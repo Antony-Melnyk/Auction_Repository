@@ -23,5 +23,11 @@ namespace Auction
         {
             InitializeComponent();
         }
+
+        private void SignIn_Click(object sender, RoutedEventArgs e)
+        { SignInRoom s1 = new SignInRoom();
+            s1.Show();
+           
+        }
     }
 }
