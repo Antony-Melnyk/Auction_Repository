@@ -9,7 +9,7 @@ namespace BLL
 {
     public class Operations
     {
-        public void Registration(string name, string password, string email, int age)
+        public static bool Registration(string name, string password, string email, int age)
         {
             User user = new User();
             user.NickName = name;
@@ -23,11 +23,13 @@ namespace BLL
                 {
                     m1.Users.Add(user);
                     m1.SaveChanges();
+                    return true;
                 }
+                else return false;
             }
         }
 
-        public bool SignIn(string nickname, string pass)
+        public static bool SignIn(string nickname, string pass)
         {
             using (Model1 m1 = new Model1())
             {
@@ -41,12 +43,12 @@ namespace BLL
             //return u;
         }
 
-        public void AddBalance(User user, float money)
+        public static void AddBalance(User user, float money)
         {
             user.Balance += money;
         }
 
-        public void AddItem(string name, int price, string info, User user)
+        public static void AddItem(string name, int price, string info, User user)
         {
             Item item = new Item();
             item.Price = price;
