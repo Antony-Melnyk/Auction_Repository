@@ -88,6 +88,9 @@
     <Compile Include="SignInRoom.xaml.cs">
       <DependentUpon>SignInRoom.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StartedWindow.xaml.cs">
+      <DependentUpon>StartedWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -109,6 +112,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SignInRoom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StartedWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
