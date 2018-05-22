@@ -1,5 +1,4 @@
-﻿
-    <controls:MetroWindow x:Class="Auction.RegistrationWindow"
+﻿ <controls:MetroWindow x:Class="Auction.RegistrationWindow"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
