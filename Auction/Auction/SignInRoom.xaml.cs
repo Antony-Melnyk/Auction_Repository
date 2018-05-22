@@ -29,5 +29,10 @@ namespace Auction
             s1.Show();
            
         }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
