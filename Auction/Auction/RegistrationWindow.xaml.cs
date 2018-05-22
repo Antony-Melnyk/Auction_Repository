@@ -33,5 +33,10 @@ namespace Auction
                 MessageBox.Show("Registration was succesful", "Message", MessageBoxButton.OK, MessageBoxImage.Information);
             else MessageBox.Show("Name [" + Name_Box.Text + "] is busy!", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
