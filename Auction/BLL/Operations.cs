@@ -10,7 +10,7 @@ namespace BLL
 {
     public class Operations
     {
-        public static bool Registration(string name,float balance, string password, string email, int age)
+        public static bool Registration(string name, float balance, string password, string email, int age)
         {
             User user = new User();
             user.NickName = name;

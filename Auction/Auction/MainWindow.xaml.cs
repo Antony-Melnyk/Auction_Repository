@@ -27,7 +27,7 @@ namespace Auction
             InitializeComponent();
         }
 
-        public void Button_Click(object sender, RoutedEventArgs e)
+        public void SignIn_Click(object sender, RoutedEventArgs e)
         {
             s1.Show();
         }
