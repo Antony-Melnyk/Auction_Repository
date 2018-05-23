@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Auction"
         mc:Ignorable="d"
         Title="ItemsWindow" Height="300" Width="300">
-    <Grid>
+    <Grid Background="AliceBlue">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -18,8 +18,12 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <GroupBox Grid.ColumnSpan="3" Grid.RowSpan="3">
-            <Button/>
-        </GroupBox>
+        <ScrollViewer Grid.ColumnSpan="2" Grid.RowSpan="3" Background="LightBlue">
+            <GroupBox Grid.ColumnSpan="2" Grid.RowSpan="3">
+                <ListBox x:Name="itemslist" Foreground="Blue" FontSize="10" Background="AliceBlue"/>
+            </GroupBox>
+        </ScrollViewer>
+        <Button Grid.Column="2" Margin="7" Background="CornflowerBlue" Content="Delete" FontSize="14" Foreground="Blue" Click="Delete_Click"/>
+        <Button Grid.Column="2" Grid.Row="2" Background="LightCoral" Margin="15" FontSize="12" Foreground="Red" Content="Close" />
     </Grid>
 </Window>
