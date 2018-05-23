@@ -8,13 +8,13 @@
         Title="MainWindow" Height="643.5" Width="993">
     <Grid Background="AliceBlue">
         <Grid.RowDefinitions>
-            <RowDefinition Height="36*"/>
-            <RowDefinition Height="32*"/>
-            <RowDefinition Height="129*"/>
-            <RowDefinition Height="32*"/>
-            <RowDefinition Height="34*"/>
-            <RowDefinition Height="157*"/>
-            <RowDefinition Height="87*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="198*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="137*"/>
+            <RowDefinition Height="104*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="225*"/>
@@ -22,8 +22,8 @@
             <ColumnDefinition Width="109*"/>
             <ColumnDefinition Width="245*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Text="Rooms: " FontSize="24" Foreground="Blue" Background="AliceBlue" FontFamily="Yu Gothic UI Semibold" VerticalAlignment="Center"/>
-        <ScrollViewer  Grid.RowSpan="5" Height="445" Grid.Row="1">
+        <TextBlock Text="Rooms: " FontSize="24" Foreground="Blue" Background="AliceBlue" FontFamily="Yu Gothic UI Semibold" VerticalAlignment="Center" Height="32" Margin="0,6"/>
+        <ScrollViewer  Grid.RowSpan="5" Grid.Row="1" Margin="0,10">
             <ListBox VerticalAlignment="Top" Background="White" Height="435"/>
         </ScrollViewer>
         <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="AliceBlue" Margin="10"/>
@@ -31,11 +31,15 @@
         <TextBox Grid.Row="6" Grid.Column="1" Background="LightBlue" Margin="10,5,5,10"/>
         <Button Grid.Row="6" Grid.Column="2" Background="AliceBlue" Margin="5,5,10,10" Content="Enter" FontSize="20" Foreground="Blue"/>
         <Button Content="SignOut" Grid.Column="3" Grid.Row="0" Margin="40,5,40,5" Background="LightCoral" Foreground="DarkRed" FontSize="17" FontFamily="Yu Gothic UI Semibold" Click="SignIn_Click"/>
-        <Label x:Name="userName" Content="UserName" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" FontSize="16" Foreground="Blue"/>
+        <Label x:Name="userName" Content="UserName" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" FontSize="16" Foreground="Blue" Margin="92,0" Width="84"/>
         <Image Grid.Column="3" Grid.Row="2" Margin="25,5,25,5" />
-        <TextBlock Text="Balance: " Grid.Column="3" Grid.Row="3" FontSize="20" Foreground="Blue" Background="AliceBlue"/>
+        <TextBlock Text="Balance: " Grid.Column="3" Grid.Row="5" FontSize="20" Foreground="Blue" Background="AliceBlue"/>
         <!--<Label Content="0000" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Right" FontSize="20" Foreground="Blue" Width="168" VerticalAlignment="Top" Height="41" Margin="0,0,8,0" Grid.RowSpan="2"/>-->
-        <Button Content="Show My Items" Grid.Column="3" Grid.Row="4" Margin="2" Foreground="Blue" Background="AliceBlue" FontSize="16" FontFamily="Segoe UI Semibold"/>
-
+        <Button Content="Show My Items" Grid.Column="3" Grid.Row="4" Margin="2" Foreground="Blue" Background="AliceBlue" FontSize="16" FontFamily="Segoe UI Semibold" BorderBrush="AliceBlue"/>
+        <Button Content="Change Foto" Grid.Column="3" Grid.Row="3" Margin="5" Foreground="Blue" Background="AliceBlue" FontSize="14" FontFamily="Segoe UI Semibold" BorderBrush="AliceBlue"/>
+        <StackPanel Grid.Row="6">
+            <Button Content="Create Room" Grid.Row="6" Background="AliceBlue" Foreground="Blue" VerticalAlignment="Top" Height="40" FontSize="14" Click="Create_Click" Margin="5"/>
+            <Button Content="Choose Room" Grid.Row="6" Background="AliceBlue" Foreground="Purple" VerticalAlignment="Bottom" Height="40" FontSize="14" Click="Create_Click" Margin="5,0,5,5"/>
+        </StackPanel>
     </Grid>
 </Window>
