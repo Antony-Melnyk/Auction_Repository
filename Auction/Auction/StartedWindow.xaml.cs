@@ -24,16 +24,17 @@ namespace Auction
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        private void SignIn_Btn_Click(object sender, RoutedEventArgs e)
         {
-            SignInRoom s1 = new SignInRoom();
-            s1.Show();
+            SignInRoom sir = new SignInRoom();
+            sir.Show();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Registration_Btn_Click(object sender, RoutedEventArgs e)
         {
-            RegistrationWindow r1 = new RegistrationWindow();
-            r1.Show();
+            RegistrationWindow rw = new RegistrationWindow();
+            rw.Show();
         }
     }
 }

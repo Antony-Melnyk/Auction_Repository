@@ -28,8 +28,8 @@
         
         <TextBlock Text="Auction Player" Grid.Column="2" HorizontalAlignment="Center" Foreground="Purple" FontSize="26" Background="AliceBlue" Grid.ColumnSpan="2" FontFamily="Franklin Gothic Medium" />
         <TextBlock Text="Choose your way" Grid.Column="2"  Grid.Row="1" Foreground="Purple" FontSize="20" Background="AliceBlue" TextAlignment="Center" Grid.ColumnSpan="2" />
-        <Button Content="Sign in" Grid.Column="2" Grid.Row="2" Margin="5,5,0,5" HorizontalAlignment="Left" Foreground="Gainsboro" Background="Brown" FontSize="14" Width="65" Click="Button_Click"/>
-        <Button Content="Registration" Grid.Column="3" Grid.Row="2" Margin="0,5,5,5" HorizontalAlignment="Right" Foreground="Pink" Background="Purple" FontSize="14" Width="111" Click="Button_Click_1"/>
+        <Button x:Name="SignIn_Btn" Content="Sign in" Grid.Column="2" Grid.Row="2" Margin="5,5,0,5" HorizontalAlignment="Left" Foreground="Gainsboro" Background="Brown" FontSize="14" Width="65" Click="SignIn_Btn_Click"/>
+        <Button x:Name="Registration_Btn" Content="Registration" Grid.Column="3" Grid.Row="2" Margin="0,5,5,5" HorizontalAlignment="Right" Foreground="Pink" Background="Purple" FontSize="14" Width="111" Click="Registration_Btn_Click"/>
         <TextBlock Grid.Column="1" Grid.Row="3" Background="MediumPurple" Grid.ColumnSpan="4"/>
         <!--<TextBlock Text="Name: " Grid.Column="2" Grid.Row="7" Foreground="Blue" Background="AliceBlue" FontSize="16"/>-->
         <!--<TextBox x:Name="Named_Box" Grid.Column="3" Grid.Row="7" Background="LightBlue"/>-->
