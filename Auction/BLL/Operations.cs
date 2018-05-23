@@ -10,14 +10,14 @@ namespace BLL
 {
     public class Operations
     {
-        public static bool Registration(string name, string password, string email, int age)
+        public static bool Registration(string name,float balance, string password, string email, int age)
         {
             User user = new User();
             user.NickName = name;
             user.Password = password;
             user.Email = email;
             user.Age = age;
-            user.Balance = 0;
+            user.Balance = balance;
             using (Model1 m1 = new Model1())
             {
                 if (m1.Users.FirstOrDefault(x => x.NickName == user.NickName) == null)
