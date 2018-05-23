@@ -22,8 +22,10 @@ namespace Auction
     /// </summary>
     public partial class RegistrationWindow : MetroWindow
     {
+        public StartedWindow sw = new StartedWindow();
         public RegistrationWindow()
         {
+             
             InitializeComponent();
         }
 
@@ -39,11 +41,13 @@ namespace Auction
             {
                 MessageBox.Show(ex.Message);
             }
+            sw.Show();
+            Close();
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-            StartedWindow sw = new StartedWindow();
+           
             sw.Show();
             Close();
         }
