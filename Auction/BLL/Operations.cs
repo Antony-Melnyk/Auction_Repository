@@ -18,6 +18,7 @@ namespace BLL
             user.Email = email;
             user.Age = age;
             user.Balance = balance;
+            //asd
             using (Model1 m1 = new Model1())
             {
                 if (m1.Users.FirstOrDefault(x => x.NickName == user.NickName) == null)
