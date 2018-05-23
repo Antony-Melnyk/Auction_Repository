@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -16,21 +15,19 @@ using System.Windows.Shapes;
 namespace Auction
 {
     /// <summary>
-    /// Interaction logic for RoomWindow.xaml
+    /// Interaction logic for AddMoneyWindow.xaml
     /// </summary>
-    public partial class RoomWindow : Window
+    public partial class AddMoneyWindow : Window
     {
-        public RoomWindow()
+        public AddMoneyWindow()
         {
             InitializeComponent();
-            
         }
 
         private void AddMoney_Click(object sender, RoutedEventArgs e)
         {
-            AddMoneyWindow adw = new AddMoneyWindow();
-            adw.Show();
+            AddMoneyWindow amw = new AddMoneyWindow();
+            amw.Show();
         }
     }
-    }
-
+}

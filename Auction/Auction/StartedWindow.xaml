@@ -8,34 +8,30 @@
         Title="StartedWindow" Height="273.312" Width="411.038">
     <Grid Background="AliceBlue">
         <Grid.RowDefinitions>
-            <RowDefinition Height="46*"/>
-            <RowDefinition Height="46*"/>
-            <RowDefinition Height="46*"/>
-            <RowDefinition Height="46*"/>
-            <RowDefinition Height="46*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="76*"/>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="23*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="27*"/>
-            <ColumnDefinition Width="12*"/>
-            <ColumnDefinition Width="68*"/>
-            <ColumnDefinition Width="180*"/>
-            <ColumnDefinition Width="12*"/>
-            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="34*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="154*"/>
+            <ColumnDefinition Width="153*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="32*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Background="CornflowerBlue" Grid.RowSpan="5" />
-        <TextBlock Background="CornflowerBlue" Grid.RowSpan="5" Grid.Column="5" />
-        <TextBlock Background="AliceBlue" Grid.RowSpan="5" Grid.Column="1"/>
-        <TextBlock Background="AliceBlue" Grid.RowSpan="5" Grid.Column="4" />
-        <TextBlock Background="AliceBlue" Grid.Row="4" Grid.ColumnSpan="4" Grid.Column="1" />
-        <TextBlock Text="Auction User" Grid.Column="2"  Foreground="Blue" FontSize="26" Background="AliceBlue" Grid.ColumnSpan="3" FontFamily="Franklin Gothic Medium" />
-        <TextBlock Text="Sign In" Grid.Column="2"  Grid.Row="1" Foreground="Blue" FontSize="20" Background="AliceBlue" TextAlignment="Center" Grid.ColumnSpan="3" />
-        <TextBlock Text="NickName: " Grid.Column="2" Grid.Row="2" Foreground="Blue" Background="AliceBlue" FontSize="15"/>
-        <TextBlock Text="Password: " Grid.Column="2" Grid.Row="3" Foreground="Blue" Background="AliceBlue" FontSize="15"/>
+        <TextBlock Background="LightPink" Grid.RowSpan="4" />
+        <TextBlock Background="LightPink" Grid.RowSpan="4" Grid.Column="5" />
+        <TextBlock Background="MediumPurple" Grid.RowSpan="4" Grid.Column="1"/>
+        <TextBlock Background="MediumPurple" Grid.RowSpan="4" Grid.Column="4" />
+        
+        <TextBlock Text="Auction Player" Grid.Column="2" HorizontalAlignment="Center" Foreground="Purple" FontSize="26" Background="AliceBlue" Grid.ColumnSpan="2" FontFamily="Franklin Gothic Medium" />
+        <TextBlock Text="Choose your way" Grid.Column="2"  Grid.Row="1" Foreground="Purple" FontSize="20" Background="AliceBlue" TextAlignment="Center" Grid.ColumnSpan="2" />
+        <Button Content="Sign in" Grid.Column="2" Grid.Row="2" Margin="5,5,0,5" HorizontalAlignment="Left" Foreground="Gainsboro" Background="Brown" FontSize="14" Width="65" Click="Button_Click"/>
+        <Button Content="Registration" Grid.Column="3" Grid.Row="2" Margin="0,5,5,5" HorizontalAlignment="Right" Foreground="Pink" Background="Purple" FontSize="14" Width="111" Click="Button_Click_1"/>
+        <TextBlock Grid.Column="1" Grid.Row="3" Background="MediumPurple" Grid.ColumnSpan="4"/>
         <!--<TextBlock Text="Name: " Grid.Column="2" Grid.Row="7" Foreground="Blue" Background="AliceBlue" FontSize="16"/>-->
-        <TextBox x:Name="Name_Box" Grid.Column="3" Grid.Row="2" Background="LightBlue"/>
-        <TextBox x:Name="Age_Box" Grid.Column="3" Grid.Row="3" Background="LightBlue"/>
-        <Button Grid.Column="2" Grid.Row="4" Content="Sign In" Background="LightBlue" Grid.ColumnSpan="2" Foreground="Blue" FontSize="12" Click="SignIn_Click" Margin="10" HorizontalAlignment="Right"/>
-        <Button Grid.Column="2" Grid.Row="4" Content="Cancel" Grid.ColumnSpan="2" FontSize="12" Click="Cancel_Click" Margin="10" HorizontalAlignment="Left"  Background="LightCoral" Foreground="DarkRed"/>
         <!--<TextBox x:Name="Named_Box" Grid.Column="3" Grid.Row="7" Background="LightBlue"/>-->
 
     </Grid>

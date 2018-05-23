@@ -14,19 +14,21 @@ using System.Windows.Shapes;
 
 namespace Auction
 {
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        SignInRoom s1 = new SignInRoom();
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
-            SignInRoom s1 = new SignInRoom();
             s1.Show();
         }
     }

@@ -25,13 +25,13 @@ namespace Auction
         }
 
         private void SignIn_Click(object sender, RoutedEventArgs e)
-        { SignInRoom s1 = new SignInRoom();
-            s1.Show();
-           
+        {
+            MainWindow m1 = new MainWindow();
+            m1.Show();
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
-        {
+        { 
 
         }
     }

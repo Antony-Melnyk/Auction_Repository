@@ -23,7 +23,7 @@
             <ColumnDefinition Width="245*"/>
         </Grid.ColumnDefinitions>
         <TextBlock Text="Rooms: " FontSize="24" Foreground="Blue" Background="AliceBlue" FontFamily="Yu Gothic UI Semibold" VerticalAlignment="Center"/>
-        <ScrollViewer  Grid.RowSpan="5" Height="445" Grid.Row="1" Margin="">
+        <ScrollViewer  Grid.RowSpan="5" Height="445" Grid.Row="1">
             <ListBox VerticalAlignment="Top" Background="White" Height="435"/>
         </ScrollViewer>
         <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="AliceBlue" Margin="10"/>

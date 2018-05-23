@@ -27,7 +27,7 @@
         <TextBlock Background="AliceBlue" Grid.RowSpan="5" Grid.Column="1"/>
         <TextBlock Background="AliceBlue" Grid.RowSpan="5" Grid.Column="4" />
         <TextBlock Background="AliceBlue" Grid.Row="4" Grid.ColumnSpan="4" Grid.Column="1" />
-        <TextBlock Text="Auction User" Grid.Column="2"  Foreground="Blue" FontSize="26" Background="AliceBlue" Grid.ColumnSpan="3" FontFamily="Franklin Gothic Medium" />
+        <TextBlock Text="Auction User" Grid.Column="2"  Foreground="Blue" FontSize="26" Background="AliceBlue" Grid.ColumnSpan="3" FontFamily="Yu Gothic UI Semibold" />
         <TextBlock Text="Sign In" Grid.Column="2"  Grid.Row="1" Foreground="Blue" FontSize="20" Background="AliceBlue" TextAlignment="Center" Grid.ColumnSpan="3" />
         <TextBlock Text="NickName: " Grid.Column="2" Grid.Row="2" Foreground="Blue" Background="AliceBlue" FontSize="15"/>
         <TextBlock Text="Password: " Grid.Column="2" Grid.Row="3" Foreground="Blue" Background="AliceBlue" FontSize="15"/>

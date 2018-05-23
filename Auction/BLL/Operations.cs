@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using System.Reflection.Emit;
 
 namespace BLL
 {
@@ -29,16 +30,17 @@ namespace BLL
             }
         }
 
-        public static bool SignIn(string nickname, string pass)
+        public static bool SignIn(string nickname, string pass, Label l)
         {
             using (Model1 m1 = new Model1())
             {
                 if (m1.Users.FirstOrDefault(x => x.NickName == nickname && x.Password == pass) != null)
                     return true;
                 else
+                    //Zapusatu v Label "Error or False password, NickName" ;
                     return false;
             }
-
+            //Roma dayn
             //User u = m1.Users.FirstOrDefault(x => x.NickName == nickname && x.Password == pass);
             //return u;
         }
