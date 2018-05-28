@@ -31,19 +31,15 @@ namespace BLL
             }
         }
 
-        public static bool SignIn(string nickname, string pass, Label l)
+        public static bool SignIn(string nickname, string pass)
         {
             using (Model1 m1 = new Model1())
             {
                 if (m1.Users.FirstOrDefault(x => x.NickName == nickname && x.Password == pass) != null)
                     return true;
                 else
-                    //Zapusatu v Label "Error or False password, NickName" ;
                     return false;
             }
-            //Roma dayn
-            //User u = m1.Users.FirstOrDefault(x => x.NickName == nickname && x.Password == pass);
-            //return u;
         }
 
         public static void AddBalance(User user, float money)
@@ -65,7 +61,7 @@ namespace BLL
             }
         }
 
-        public void AddAuction(Item item, string name)
+        public static void AddAuction(Item item, string name)
         {
             Auction a = new Auction();
             a.Name = name;
@@ -79,7 +75,7 @@ namespace BLL
             }
         }
 
-        public void DelAuction(Auction a)
+        public static void DelAuction(Auction a)
         {
             using (Model1 m1 = new Model1())
             {
@@ -88,7 +84,7 @@ namespace BLL
             }
         }
 
-        public void DeleteItem(Item item)
+        public static void DeleteItem(Item item)
         {
             using (Model1 m1 = new Model1())
             {
@@ -97,11 +93,19 @@ namespace BLL
             }
         }
 
-        public List<Auction> ShowAllAuctions()
+        public static List<Auction> ShowAllAuctions()
         {
             using (Model1 m1 = new Model1())
             {
                 return m1.Auctions.ToList();
+            }
+        }
+
+        public static float GetBalance(string name)
+        {
+            using (Model1 m1 = new Model1())
+            {
+                return m1.Users.FirstOrDefault(x => x.NickName == name).Balance;
             }
         }
     }

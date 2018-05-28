@@ -17,7 +17,7 @@ namespace AuctionChat
 
         public Chat()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace AuctionChat
             clientSocket.Connect("127.0.0.1", 8888);
             serverStream = clientSocket.GetStream();
 
-            byte[] outStream = System.Text.Encoding.ASCII.GetBytes("TextBlock"+ "$");
+            byte[] outStream = System.Text.Encoding.ASCII.GetBytes("TextBlock" + "$");
             serverStream.Write(outStream, 0, outStream.Length);
             serverStream.Flush();
 
@@ -59,10 +59,10 @@ namespace AuctionChat
 
         private void msg()
         {
-            if (this.InvokeRequired)
-                this.Invoke(new MethodInvoker(msg));
-            else
-                textBox1.Text = textBox1.Text + Environment.NewLine + " >> " + readData;
+            //if (this.InvokeRequired)
+            //    this.Invoke(new MethodInvoker(msg));
+            //else
+            //    textBox1.Text = textBox1.Text + Environment.NewLine + " >> " + readData;
         }
 
     }

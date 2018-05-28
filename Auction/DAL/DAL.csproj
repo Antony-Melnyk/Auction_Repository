@@ -50,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logger.cs" />
     <Compile Include="Migrations\201805231402033_InitialCreate.cs" />
     <Compile Include="Migrations\201805231402033_InitialCreate.Designer.cs">
       <DependentUpon>201805231402033_InitialCreate.cs</DependentUpon>
