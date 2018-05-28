@@ -11,16 +11,29 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BLL;
+using DAL;
+using MahApps.Metro.Controls;
 
 namespace Auction
 {
-
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : MetroWindow
     {
-        SignInRoom s1 = new SignInRoom();
+        void funcRefresh()
+        {
+            List<string> AuctionsNames = new List<string>();
+            AuctionCount.Text = "Count : " + Operations.ShowAllAuctions().Count.ToString();
+            foreach (DAL.Auction a in Operations.ShowAllAuctions())
+            {
+                AuctionsNames.Add(a.Name);
+            }
+
+            listBoxAuctions.ItemsSource = AuctionsNames;
+            textBoxbalance.Text = "Balance : " + Operations.GetBalance(userName.Content.ToString()).ToString();
+        }
 
         public MainWindow()
         {
@@ -29,12 +42,29 @@ namespace Auction
 
         public void SignIn_Click(object sender, RoutedEventArgs e)
         {
-            s1.Show();
+
         }
 
         private void Create_Click(object sender, RoutedEventArgs e)
         {
+            CreateAuctionWindow caw = new CreateAuctionWindow();
+            caw.ShowDialog();
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            funcRefresh();
+        }
+
+        private void MetroWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            funcRefresh();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ItemsWindow iw = new ItemsWindow();
+            iw.ShowDialog();
         }
     }
 }

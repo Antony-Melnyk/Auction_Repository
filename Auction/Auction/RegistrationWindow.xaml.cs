@@ -22,33 +22,23 @@ namespace Auction
     /// </summary>
     public partial class RegistrationWindow : MetroWindow
     {
-        public StartedWindow sw = new StartedWindow();
         public RegistrationWindow()
         {
-             
             InitializeComponent();
         }
 
         private void Registration_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (Operations.Registration(Name_Box.Text, Convert.ToSingle(Balance_Box.Text), Password_Box.Password, Email_Box.Text, Convert.ToInt32(Age_Box.Text)) == true)
             {
-                if (Operations.Registration(Name_Box.Text, Convert.ToSingle(Balance_Box.Text), Password_Box.Password, Email_Box.Text, Convert.ToInt32(Age_Box.Text)) == true)
-                    MessageBox.Show("Registration was succesful", "Message", MessageBoxButton.OK, MessageBoxImage.Information);
-                else MessageBox.Show("Name [" + Name_Box.Text + "] is busy!", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Registration was succesful", "Message", MessageBoxButton.OK, MessageBoxImage.Information);
+                Close();
             }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            sw.Show();
-            Close();
+            else MessageBox.Show("Name [" + Name_Box.Text + "] is busy!", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-           
-            sw.Show();
             Close();
         }
     }
