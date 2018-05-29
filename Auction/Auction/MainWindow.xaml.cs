@@ -33,6 +33,7 @@ namespace Auction
 
             listBoxAuctions.ItemsSource = AuctionsNames;
             textBoxbalance.Text = "Balance : " + Operations.GetBalance(userName.Content.ToString()).ToString();
+            
         }
 
         public MainWindow()

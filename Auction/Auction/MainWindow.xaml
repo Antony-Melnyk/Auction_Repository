@@ -36,7 +36,7 @@
         <Button Grid.Row="6" Grid.Column="2" Background="AliceBlue" Margin="5,5,10,10" Content="Enter" FontSize="20" Foreground="Blue"/>
         <Button Content="Sign Out" Grid.Column="3" Grid.Row="0" Margin="40,5,40,5" Background="LightCoral" Foreground="White" FontSize="17" FontFamily="Yu Gothic UI Semibold" Click="SignIn_Click"/>
         <Label x:Name="userName" Content="UserName" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" FontSize="16" Foreground="Blue"/>
-        <Image Grid.Column="3" Grid.Row="2" Margin="25,5,25,5" />
+        <Image x:Name="Avatar" Grid.Column="3" Grid.Row="2" Margin="25,5,25,5" />
         <Label Content="?" Grid.Column="3" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="120"/>
         <TextBlock Name="textBoxbalance" Text="Balance : " Grid.Column="3" Grid.Row="5" FontSize="20" Foreground="Blue" Background="AliceBlue" HorizontalAlignment="Center"/>
         <!--<Label Content="0000" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Right" FontSize="20" Foreground="Blue" Width="168" VerticalAlignment="Top" Height="41" Margin="0,0,8,0" Grid.RowSpan="2"/>-->
