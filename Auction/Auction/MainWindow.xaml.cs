@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using BLL;
 using DAL;
 using MahApps.Metro.Controls;
+using System.Security.Policy;
+using System.Net;
 
 namespace Auction
 {
@@ -34,8 +36,23 @@ namespace Auction
 
             listBoxAuctions.ItemsSource = AuctionsNames;
             textBoxbalance.Text = "Balance : " + Operations.GetBalance(userName.Content.ToString()).ToString();
-            
+
+            using (Model1 m1 = new Model1())
+            {
+                User u = m1.Users.FirstOrDefault(x => x.NickName == userName.Content.ToString());
+                if (u.ImgPath != null)
+                {
+                    var imgUrl = new Uri("https://st.depositphotos.com/1482106/4444/i/450/depositphotos_44447855-stock-photo-waving-kazakhstan-flag.jpg");
+                    var imageData = new WebClient().DownloadData(imgUrl);
+                    var bitmapImage = new BitmapImage { CacheOption = BitmapCacheOption.OnLoad };
+                    bitmapImage.BeginInit();
+                    bitmapImage.StreamSource = new MemoryStream(imageData);
+                    bitmapImage.EndInit();
+                    Avatar.Source = bitmapImage;
+                }
+            }
         }
+        
 
         public MainWindow()
         {

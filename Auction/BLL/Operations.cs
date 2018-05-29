@@ -33,6 +33,7 @@ namespace BLL
             }
         }
 
+
         public static bool SignIn(string nickname, string pass)
         {
             using (Model1 m1 = new Model1())
