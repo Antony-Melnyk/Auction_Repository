@@ -80,6 +80,7 @@ namespace Auction
         {
             RoomWindow rw = new RoomWindow();
             rw.Show();
+            //xyu
         }
     }
 }
