@@ -31,7 +31,7 @@ namespace DAL
         public string NickName { get; set; }
         [Required]
         public string Password { get; set; }
-        
+
         [Required]
         public int Age { get; set; }
         [Required]
@@ -66,5 +66,6 @@ namespace DAL
         [Required]
         public DateTime DateOfStart { get; set; }
         public DateTime DateOfBuy { get; set; }
+        public User User { get; set; }
     }
 }
