@@ -33,7 +33,7 @@ namespace Auction
             //    foreach (DAL.Auction a in Operations.ShowAllAuctions().Where
             //        (
             //        x => x.Item.User.Id == m1.Users.FirstOrDefault(u => u.NickName ==
-                    
+
             //        ).Id
             //        )
             //        )
