@@ -75,5 +75,11 @@ namespace Auction
             AuctionsWindow aw = new AuctionsWindow();
             aw.ShowDialog();
         }
+
+        private void Choose_Click(object sender, RoutedEventArgs e)
+        {
+            RoomWindow rw = new RoomWindow();
+            rw.Show();
+        }
     }
 }
