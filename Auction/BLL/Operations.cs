@@ -12,12 +12,14 @@ namespace BLL
     {
         public static bool Registration(string name, float balance, string password, string email, int age)
         {
-            User user = new User();
-            user.NickName = name;
-            user.Password = password;
-            user.Email = email;
-            user.Age = age;
-            user.Balance = balance;
+            User user = new User
+            {
+                NickName = name,
+                Password = password,
+                Email = email,
+                Age = age,
+                Balance = balance
+            };
             //asd
             using (Model1 m1 = new Model1())
             {
@@ -47,13 +49,16 @@ namespace BLL
             user.Balance += money;
         }
 
-        public static void AddItem(string name, int price, string info, User user)
+        public static void AddItem(string name, int price, string info, string path, User user)
         {
-            Item item = new Item();
-            item.Price = price;
-            item.Name = name;
-            item.Info = info;
-            item.User = user;
+            Item item = new Item
+            {
+                Price = price,
+                Name = name,
+                Info = info,
+                ImgPath = path,
+                User = user
+            };
             using (Model1 m1 = new Model1())
             {
                 m1.Items.Add(item);
@@ -63,10 +68,12 @@ namespace BLL
 
         public static void AddAuction(Item item, string name)
         {
-            Auction a = new Auction();
-            a.Name = name;
-            a.DateOfStart = DateTime.Now;
-            a.Item = item;
+            Auction a = new Auction
+            {
+                Name = name,
+                DateOfStart = DateTime.Now,
+                Item = item
+            };
 
             using (Model1 m1 = new Model1())
             {
@@ -106,6 +113,17 @@ namespace BLL
             using (Model1 m1 = new Model1())
             {
                 return m1.Users.FirstOrDefault(x => x.NickName == name).Balance;
+            }
+        }
+
+        public static List<Item> ShowAllItems(string name)
+        {
+            using (Model1 m1 = new Model1())
+            {
+                return m1.Items.Where
+                    (
+                    x => x.User.Id == m1.Users.FirstOrDefault(y => y.NickName == name).Id
+                    ).ToList();
             }
         }
     }

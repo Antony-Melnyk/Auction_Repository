@@ -37,6 +37,7 @@ namespace DAL
         [Required]
         public string Email { get; set; }
         public float Balance { get; set; }
+        public string ImgPath { get; set; }
 
         public virtual ICollection<Item> Items { get; set; }
     }
@@ -47,10 +48,12 @@ namespace DAL
         [Required]
         public string Name { get; set; }
         public int Price { get; set; }
+        public string ImgPath { get; set; }
         [Required]
         public string Info { get; set; }
         [Required]
         public User User { get; set; }
+
     }
 
     public class Auction
