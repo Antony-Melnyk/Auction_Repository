@@ -45,5 +45,6 @@
             <Button Content="Create Auction" Grid.Row="6" Background="AliceBlue" Foreground="Blue" VerticalAlignment="Top" Height="40" FontSize="14" Click="Create_Click" Margin="5"/>
             <Button Content="Choose Auction" Grid.Row="6" Background="AliceBlue" Foreground="Purple" VerticalAlignment="Bottom" Height="40" FontSize="14" Click="Create_Click" Margin="5,0,5,5"/>
         </StackPanel>
+        <!--ff-->
     </Grid>
 </controls:MetroWindow>
