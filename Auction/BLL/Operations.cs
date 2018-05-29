@@ -115,5 +115,16 @@ namespace BLL
                 return m1.Users.FirstOrDefault(x => x.NickName == name).Balance;
             }
         }
+
+        public static List<Item> ShowAllItems(string name)
+        {
+            using (Model1 m1 = new Model1())
+            {
+                return m1.Items.Where
+                    (
+                    x => x.User.Id == m1.Users.FirstOrDefault(y => y.NickName == name).Id
+                    ).ToList();
+            }
+        }
     }
 }

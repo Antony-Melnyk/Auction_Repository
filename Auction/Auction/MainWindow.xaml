@@ -38,9 +38,9 @@
         <Label x:Name="userName" Content="UserName" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" FontSize="16" Foreground="Blue"/>
         <Image x:Name="Avatar" Grid.Column="3" Grid.Row="2" Margin="25,5,25,5" />
         <Label Content="?" Grid.Column="3" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="120"/>
+        <Button Content="Show My Auctions" Grid.Column="3" Grid.Row="3" Margin="2" Foreground="Blue" Background="AliceBlue" FontSize="16" BorderBrush="AliceBlue" Click="Button_Click_ShowAuctions"/>
+        <Button Content="Show My Items" Grid.Column="3" Grid.Row="4" Margin="2" Foreground="Blue" Background="AliceBlue" FontSize="16" BorderBrush="AliceBlue" Click="Button_Click_ShowItems"/>
         <TextBlock Name="textBoxbalance" Text="Balance : " Grid.Column="3" Grid.Row="5" FontSize="20" Foreground="Blue" Background="AliceBlue" HorizontalAlignment="Center"/>
-        <!--<Label Content="0000" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Right" FontSize="20" Foreground="Blue" Width="168" VerticalAlignment="Top" Height="41" Margin="0,0,8,0" Grid.RowSpan="2"/>-->
-        <Button Content="Show My Items" Grid.Column="3" Grid.Row="4" Margin="2" Foreground="Blue" Background="AliceBlue" FontSize="16" FontFamily="Segoe UI Semibold" BorderBrush="AliceBlue" Click="Button_Click_1"/>
         <StackPanel Grid.Row="6">
             <Button Content="Create Auction" Grid.Row="6" Background="AliceBlue" Foreground="Blue" VerticalAlignment="Top" Height="40" FontSize="14" Click="Create_Click" Margin="5"/>
             <Button Content="Choose Auction" Grid.Row="6" Background="AliceBlue" Foreground="Purple" VerticalAlignment="Bottom" Height="40" FontSize="14" Click="Create_Click" Margin="5,0,5,5"/>
