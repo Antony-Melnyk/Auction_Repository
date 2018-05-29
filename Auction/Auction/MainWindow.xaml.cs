@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -58,13 +59,20 @@ namespace Auction
 
         private void MetroWindow_Loaded(object sender, RoutedEventArgs e)
         {
+            File.WriteAllText(Directory.GetCurrentDirectory() + "\\nickname.txt", userName.Content.ToString());
             funcRefresh();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click_ShowItems(object sender, RoutedEventArgs e)
         {
             ItemsWindow iw = new ItemsWindow();
             iw.ShowDialog();
+        }
+
+        private void Button_Click_ShowAuctions(object sender, RoutedEventArgs e)
+        {
+            AuctionsWindow aw = new AuctionsWindow();
+            aw.ShowDialog();
         }
     }
 }

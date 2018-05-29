@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using MahApps.Metro.Controls;
+using BLL;
+using DAL;
 
 namespace Auction
 {
@@ -27,7 +29,14 @@ namespace Auction
 
         private void OKClick(object sender, RoutedEventArgs e)
         {
+            Item item;
+            using (Model1 m1 = new Model1())
+            {
+                item = m1.Items.FirstOrDefault(x => x.Name == ItemName.Content.ToString());
+                m1.SaveChanges();
+            }
 
+            Operations.AddAuction(item, textBoxName.Text);
         }
 
         private void ItemsClick(object sender, RoutedEventArgs e)

@@ -85,6 +85,9 @@
     <Compile Include="CreateAuctionWindow.xaml.cs">
       <DependentUpon>CreateAuctionWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AuctionsWindow.xaml.cs">
+      <DependentUpon>AuctionsWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ItemsWindow.xaml.cs">
       <DependentUpon>ItemsWindow.xaml</DependentUpon>
     </Compile>
@@ -104,6 +107,10 @@
     <Page Include="CreateAuctionWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AuctionsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ItemsWindow.xaml">
       <SubType>Designer</SubType>
