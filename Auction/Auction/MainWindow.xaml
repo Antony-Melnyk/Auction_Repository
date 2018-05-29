@@ -43,7 +43,7 @@
         <TextBlock Name="textBoxbalance" Text="Balance : " Grid.Column="3" Grid.Row="5" FontSize="20" Foreground="Blue" Background="AliceBlue" HorizontalAlignment="Center"/>
         <StackPanel Grid.Row="6">
             <Button Content="Create Auction" Grid.Row="6" Background="AliceBlue" Foreground="Blue" VerticalAlignment="Top" Height="40" FontSize="14" Click="Create_Click" Margin="5"/>
-            <Button Content="Choose Auction" Grid.Row="6" Background="AliceBlue" Foreground="Purple" VerticalAlignment="Bottom" Height="40" FontSize="14" Click="Create_Click" Margin="5,0,5,5"/>
+            <Button Content="Choose Auction" Grid.Row="6" Background="AliceBlue" Foreground="Purple" VerticalAlignment="Bottom" Height="40" FontSize="14" Click="Choose_Click" Margin="5,0,5,5"/>
         </StackPanel>
         <!--ff-->
     </Grid>
